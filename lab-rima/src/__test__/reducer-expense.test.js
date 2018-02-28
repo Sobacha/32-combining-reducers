@@ -42,7 +42,7 @@ describe('Expense reducer', () => {
       let state = reducer({}, {type: 'CATEGORY_CREATE', payload: mockCategory});
       state = reducer(state, {type: 'EXPENSE_CREATE', payload: mockExpense});
       const updatedMockExpense = {name: 'updated expense', price: '200', categoryId: '1', id: '1'};
-      const expected = {'1': [updatedMockExpense]}
+      const expected = {'1': [updatedMockExpense]};
       expect(reducer(state, {type: 'EXPENSE_UPDATE', payload: updatedMockExpense})).toEqual(expected);
     });
   });

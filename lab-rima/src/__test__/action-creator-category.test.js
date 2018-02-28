@@ -6,8 +6,8 @@ describe('category-action module', () => {
     const payload = {name: 'test name', budget: 10};
     const expectedAction = {
       type: 'CATEGORY_CREATE',
-      payload
-    }
+      payload,
+    };
     expect(actions.categoryCreate(payload)).toEqual(expectedAction);
   });
 
@@ -15,8 +15,8 @@ describe('category-action module', () => {
     const payload = {name: 'test name', budget: 10, id: 1};
     const expectedAction = {
       type: 'CATEGORY_UPDATE',
-      payload
-    }
+      payload,
+    };
     expect(actions.categoryUpdate(payload)).toEqual(expectedAction);
   });
 
@@ -24,8 +24,8 @@ describe('category-action module', () => {
     const payload = {name: 'test name', budget: 10, id: 2};
     const expectedAction = {
       type: 'CATEGORY_DELETE',
-      payload
-    }
+      payload,
+    };
     expect(actions.categoryDelete(payload)).toEqual(expectedAction);
   });
 

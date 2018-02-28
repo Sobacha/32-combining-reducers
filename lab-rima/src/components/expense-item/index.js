@@ -57,7 +57,7 @@ class ExpenseItem extends React.Component{
           buttonText="update"
           onComplete={this.props.expenseItemExpenseUpdate} />
       )}
-    </li>
+    </li>;
   }
 }
 
@@ -67,7 +67,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = (dispatch, getState) => ({
-  expenseItemExpenseUpdate: expense => dispatch(expenseUpdate(expense))
+  expenseItemExpenseUpdate: expense => dispatch(expenseUpdate(expense)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ExpenseItem);

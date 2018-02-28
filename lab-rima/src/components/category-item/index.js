@@ -80,7 +80,7 @@ class CategoryItem extends React.Component{
           }
         </ul>
       </section>
-    </li>
+    </li>;
   }
 }
 

@@ -6,8 +6,8 @@ describe('expense-action module', () => {
     const payload = {name: 'test name', budget: 10};
     const expectedAction = {
       type: 'CATEGORY_CREATE',
-      payload
-    }
+      payload,
+    };
     expect(actions.categoryCreate(payload)).toEqual(expectedAction);
   });
 
@@ -15,8 +15,8 @@ describe('expense-action module', () => {
     const payload = {name: 'test name', budget: 10, id: 2};
     const expectedAction = {
       type: 'CATEGORY_DELETE',
-      payload
-    }
+      payload,
+    };
     expect(actions.categoryDelete(payload)).toEqual(expectedAction);
   });
 
@@ -24,8 +24,8 @@ describe('expense-action module', () => {
     const payload = {name: 'test name', price: 10, categoryId: 1, id: 1};
     const expectedAction = {
       type: 'EXPENSE_CREATE',
-      payload
-    }
+      payload,
+    };
     expect(actions.expenseCreate(payload)).toEqual(expectedAction);
   });
 
@@ -33,8 +33,8 @@ describe('expense-action module', () => {
     const payload = {name: 'test name', price: 10, categoryId: 1, id: 1};
     const expectedAction = {
       type: 'EXPENSE_UPDATE',
-      payload
-    }
+      payload,
+    };
     expect(actions.expenseUpdate(payload)).toEqual(expectedAction);
   });
 
@@ -42,8 +42,8 @@ describe('expense-action module', () => {
     const payload = {name: 'test name', budget: 10, categoryId: 2, id: 2};
     const expectedAction = {
       type: 'EXPENSE_DELETE',
-      payload
-    }
+      payload,
+    };
     expect(actions.expenseDelete(payload)).toEqual(expectedAction);
   });
 
